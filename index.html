@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive glosary </title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+        
+        body{
+            background-color: rgb(0, 0, 0)
+        }
+        .titulo{
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 32px;
+            text-align: center;
+            border-radius: 20px;
+            background-color: rgb(201, 0, 184);
+            color:rgb(255, 255, 255);
+            align-items: center;
+            margin-inline-start: 30px;
+            border: 30px;
+            padding: 25px 20px;
+            margin-bottom:20px;
+        }
+        .palabra {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            padding-left: 40px;
+            align-items: center;
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border-radius: 12px;
+            overflow: hidden; /* Oculta lo que se salga del contenedor */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+        .letongue{
+            justify-content: center;
+            align-items:center;
+            display:flex;
+            gap: 50px;
+            margin-bottom: 25px;
+        }
+        .catgra {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 116, 255);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 18px;
+            
+            /* Transición suave para cuando se mueva */
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+            z-index: 10; /* Asegura que esté por encima */
+        }
+
+        .concepto {
+            padding: 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 175, 189);
+            color: #0f172a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .palabra:hover .catgra {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="titulo">
+        <h1>Marketing and advertisement glosary</h1>
+    </div>
+    <div class="letongue">
+        <div class="palabra">
+            <div class="catgra">
+                <h2>Market (Mercado)</h2>
+                <img src="mercado-removebg-preview.png" alt="Imagen de mercado" style="width: 100px; height: auto;">
+            </div>
+            <div class="concepto">
+                <p>Noun; A specific group of potential customers or the space where goods are traded. Example: he company is trying to break into the European market with its new product.</p>
+            </div>
+        </div>    
+        <div class="palabra">
+            <div class="catgra">
+                <h2>Promote (Promocionar / Promover)</h2>
+                <img src="promover-removebg-preview.png" alt="Imagen de mercado" style="width: 100px; height: auto;">
+            </div>
+            <div class="concepto">
+               <p>Verb; To publicize or advertise a product, service, or brand to increase sales or public awareness. Example: We need to promote our new summer collection on social media next week.</p>
+            </div>
+        </div>
+    </div>
+    <div class="letongue">
+        <div class="palabra">
+            <div class="catgra">
+                <h2>Engaging (Atractivo / Llamativo / Interesante)</h2>
+                <img src="images-removebg-preview.png" alt="Imagen de mercado" style="width: 100px; height: auto;">
+            </div>
+            <div class="concepto">
+                <p>Adjective; Something that is attractive, interesting, and holds the customer's attention. Example: Creating engaging video content is the best way to get more followers.</p>
+            </div>
+        </div>
+        <div class="palabra">
+            <div class="catgra">
+                <h2>Organically (Orgánicamente)</h2>
+                <img src="organically-removebg-preview.png" alt="Imagen de mercado" style="width: 100px; height: auto;">
+            </div>
+            <div class="concepto">
+               <p>Adverb; Marketing results achieved naturally through high-quality content without using paid advertising. Example: Our website traffic grew organically after we improved our SEO strategy.</p>
+            </div>
+        </div>
+    </div>
+    <div class="letongue">
+        <div class="palabra">
+            <div class="catgra">
+                <h2>Bellow (debajo/abajo)</h2>
+                <img src="11321360.gif" alt="Imagen de mercado" style="width: 100px; height: auto;">
+            </div>
+            <div class="concepto">
+               <p>Preposition; Lower than or underneath; in marketing, it refers to direct, untargeted, or niche promotional tactics. Example: Direct email campaigns fall below the standard mass-media advertising category.</p>
+            </div>
+        </div>
+        <div class="palabra">
+            <div class="catgra">
+                <h2>Lead (Cliente potencial)</h2>
+                <img src="CLIENTE.png" alt="Imagen de mercado" style="width: 100px; height: auto;">
+            </div>
+            <div class="concepto">
+               <p>Noun; .A person or business that has shown interest in a company's products or services and has provided their contact information. Example: The new online registration form generated over five hundred leads in its first week.</p>
+            </div>
+        </div>
+    </div>
+    <div class="letongue">
+        <div class="palabra">
+            <div class="catgra">
+                <h2>Viral (viral o de rapida difusion)</h2>
+                <img src="viral.png" alt="Imagen de mercado" style="width: 100px; height: auto;">
+            </div>
+            <div class="concepto">
+                <p>Adjective; Content that spreads rapidly and widely from one internet user to another through social media and online platforms. Example: Their short video campaign went viral, gaining millions of views in just twenty-four hours.</p>
+            </div>
+        </div>
+        <div class="palabra">
+            <div class="catgra">
+                <h2>To Launch (presentar o lanzar)</h2>
+                <img src="lanzar-removebg-preview.png" alt="Imagen de mercado" style="width: 100px; height: auto;">
+            </div>
+            <div class="concepto">
+                <p>Verb; To introduce or start a new product, service, or advertising campaign in the market. Example: he marketing team plans to launch the summer advertising campaign next Monday.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
